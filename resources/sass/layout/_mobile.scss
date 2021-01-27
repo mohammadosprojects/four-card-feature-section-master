@@ -8,9 +8,11 @@
   }
 
   .cards {
+    &__top {
+      flex-direction: column;
+    }
     &__botoom {
       flex-direction: column;
-
       .card:last-child,
       .card:first-child {
         transform: translateY(0);
