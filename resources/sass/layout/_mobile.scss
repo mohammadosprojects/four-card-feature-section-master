@@ -1,0 +1,31 @@
+@media (max-width: 60rem) {
+  .container {
+    padding: 2rem;
+  }
+  .header {
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .cards {
+    &__botoom {
+      flex-direction: column;
+
+      .card:last-child,
+      .card:first-child {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .card {
+    box-sizing: border-box;
+    padding: 2rem;
+    width: 90%;
+
+    &__icon {
+      bottom: 2rem;
+      right: 2rem;
+    }
+  }
+}

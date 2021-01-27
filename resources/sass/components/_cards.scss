@@ -1,0 +1,61 @@
+.cards {
+  width: 100%;
+  &__top {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__botoom {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    .card:last-child,
+    .card:first-child {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 3rem;
+  width: 30%;
+  height: 28rem;
+  background-color: $color-wight;
+  position: relative;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 3rem rgba($color: #000000, $alpha: 0.2);
+
+  &__1 {
+    border-top: 0.5rem solid $color-Red;
+  }
+  &__2 {
+    border-top: 0.5rem solid $color-Cyan;
+  }
+  &__3 {
+    border-top: 0.5rem solid $color-Orange;
+  }
+  &__4 {
+    border-top: 0.5rem solid $color-Blue;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: $color-gray;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
